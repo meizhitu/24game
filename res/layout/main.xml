@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/back"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_alignBottom="@+id/linearLayout2" >
+
+            <ImageView
+                android:id="@+id/card1"
+                android:layout_width="wrap_content"
+                android:layout_height="120dp" />
+
+            <ImageView
+                android:id="@+id/card2"
+                android:layout_width="wrap_content"
+                android:layout_height="120dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="130dp" >
+
+            <ImageView
+                android:id="@+id/card3"
+                android:layout_width="wrap_content"
+                android:layout_height="120dp" />
+
+            <ImageView
+                android:id="@+id/card4"
+                android:layout_width="wrap_content"
+                android:layout_height="120dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/input"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="可以使用+-*/()"
+                android:singleLine="true" >
+
+                <requestFocus />
+            </EditText>
+
+            <Button
+                android:id="@+id/buttonNoAnswer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="无解" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/go"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="完成" />
+
+            <Button
+                android:id="@+id/next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:text="下一个" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/editTextAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="94dp"
+            android:layout_gravity="bottom"
+            android:editable="false"
+            android:inputType="textMultiLine" >
+        </EditText>
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="偷看答案" />
+
+            <Button
+                android:id="@+id/buttonAllAns"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="偷看所有答案" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
